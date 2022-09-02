@@ -29,7 +29,7 @@ _A guide to submitting multiple workflows to a local Cromwell server concurrentl
 
 -->
 
-This walkthrough is intended for use by the Deng's Bioinformatics Lab, but should be applicable to any environment where a **local** implementation of [Cromwell](https://github.com/broadinstitute/cromwell) server has been deployed.
+This walkthrough is intended for use by the Deng Lab of Bioinformatics at the University of Hawaii Cancer Center, but should be applicable to any environment where a **local** implementation of [Cromwell](https://github.com/broadinstitute/cromwell) server has been deployed.
 
 ## Dependencies
 
@@ -40,7 +40,9 @@ This walkthrough assumes that user and/or their environment has the following:
 
 ## Available pipelines
 
-1. RNA-seq variation calling
-   - Based off of GATK's best practices
+1. RNA-seq mutation calling pipeline
+   - Adapted from GATK's best practices
+2. DNA-seq mutation calling pipeline
+   - Implementation of GATK's best practices
 
 
