@@ -36,7 +36,12 @@ This walkthrough is intended for use by the Deng Lab of Bioinformatics at the Un
 This walkthrough assumes that user and/or their environment has the following:
 1. Conda: A new environment is highly recommended
 2. [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
-3. Access to the Arashi server, wrapper scripts are located at `/home/cromwell-scripts/`
+3. Access to the Arashi server:
+- wrapper scripts are located at `/home/cromwell-scripts/` 
+
+## Overview
+
+A brief introduction, including configuring Oliver is available 
 
 ## Available pipelines
 
