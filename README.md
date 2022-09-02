@@ -29,8 +29,6 @@ _A guide to using Oliver to submit grouped workflows to a local Cromwell server.
 
 -->
 
-<!--step0
-
 This walkthrough is intended for use by the Deng's Bioinformatics Lab, but should be applicable to any environment where a **local** implementation of [Cromwell](https://github.com/broadinstitute/cromwell) server has been deployed.
 
 ## Dependencies
@@ -40,5 +38,4 @@ This walkthrough is intended for use by the Deng's Bioinformatics Lab, but shoul
     - [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
     - Access to the Arashi server, wrapper scripts are located at `/home/cromwell-scripts/`
 
-endstep0-->
 
