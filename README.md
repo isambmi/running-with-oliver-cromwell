@@ -7,7 +7,7 @@
 
 # Running WDL pipelines with Oliver+Cromwell
 
-_A guide to using Oliver to submit grouped workflows to a local Cromwell server._
+_A guide to submitting multiple workflows to a local Cromwell server concurrently with Oliver wrappers._
 
 <!-- 
   <<< Author notes: Start of the course >>> 
@@ -37,5 +37,10 @@ This walkthrough assumes that user and/or their environment has the following:
 1. Conda: A new environment is highly recommended
 2. [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
 3. Access to the Arashi server, wrapper scripts are located at `/home/cromwell-scripts/`
+
+## Available pipelines
+
+1. RNA-seq variation calling
+   - Based off of GATK's best practices
 
 
