@@ -33,9 +33,9 @@ This walkthrough is intended for use by the Deng's Bioinformatics Lab, but shoul
 
 ## Dependencies
 
-1. This walkthrough assumes that user and/or their environment has the following:
-    - Conda: A new environment is highly recommended
-    - [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
-    - Access to the Arashi server, wrapper scripts are located at `/home/cromwell-scripts/`
+This walkthrough assumes that user and/or their environment has the following:
+1. Conda: A new environment is highly recommended
+2. [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
+3. Access to the Arashi server, wrapper scripts are located at `/home/cromwell-scripts/`
 
 
