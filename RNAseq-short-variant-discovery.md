@@ -12,10 +12,18 @@ This pipeline is adapted from Adapted from [GATK's best practices for RNAseq sho
 
 - Applies FixMateInformation and AddReadGroups to "prepare" BAM files
 - location of scripts is `/home/cromwell-scripts/preM2RNA`
-- run using `group-submit-preM2RNA.sh`
+- run using:
+
+```
+group-submit-preM2RNA.sh
+```
 
 ## Variant Calling
 
 - Processes RNA-seq according to GATK best practices. 
 - location of script is `/home/cromwell-scripts/m2-rna`
-- run using `group-submit-m2-RNA.sh`
+- run using:
+
+```
+group-submit-m2-RNA.sh
+````
