@@ -31,23 +31,34 @@ _A guide to submitting multiple workflows to a local Cromwell server concurrentl
 
 This walkthrough is intended for use by the Deng Lab of Bioinformatics at the University of Hawaii Cancer Center, but should be applicable to any environment where a **local** implementation of [Cromwell](https://github.com/broadinstitute/cromwell) server has been deployed.
 
-## Dependencies
+## Requirements
 
 This walkthrough assumes that user and/or their environment has the following:
 1. Conda: A new environment is highly recommended
 2. [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
-3. Access to the Arashi server:
-- wrapper scripts are located at `/home/cromwell-scripts/` 
+3. Access to the lab server:
+   - wrapper scripts are located at `/home/cromwell-scripts/` 
+   - server address is the default; `http://localhost:8000`
 
 ## Overview
 
-A brief introduction, including configuring Oliver is available 
+An introduction to the basic idea and commands for using Oliver to handle and monitor workflow submissions is available on [Oliver's GitHub](https://stjudecloud.github.io/oliver/). This guide will not go into the specifics of how Oliver or Cromwell work, but instead focus on the execution of wrapper scripts that help submit multiple workflows to Cromwell via Oliver.
+
+Most important will be:
+- Which script to use to execute a workflow (portion of a pipeline)
+- What input the script expects/accepts
 
 ## Available pipelines
 
-1. RNA-seq mutation calling pipeline
-   - Adapted from GATK's best practices
+1. [RNA-seq mutation calling pipeline](RNAseq-short-variant-discovery.md)
+   - Adapted from [GATK's best practices for RNAseq short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192?id=3891)
 2. DNA-seq mutation calling pipeline
    - Implementation of GATK's best practices
 
+## Utility wrapper scripts
+
+The utility scripts can help
+
+1. Aggregating the output of successful workflows by groupname
+2. Clearing the output of previous workflows by workflow name
 
