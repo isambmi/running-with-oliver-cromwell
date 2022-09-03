@@ -8,3 +8,14 @@ This pipeline is adapted from Adapted from [GATK's best practices for RNAseq sho
 2. Algined RNA-seq files:
    - Alignment of RNA-seq is not covered by this pipeline. The primary input for this pipeline will be aligned RNA-seq in BAM format.
 
+## Pre-processing
+
+- Applies FixMateInformation and AddReadGroups to "prepare" BAM files
+- location of scripts is `/home/cromwell-scripts/preM2RNA`
+- run using `group-submit-preM2RNA.sh`
+
+## Variant Calling
+
+- Processes RNA-seq according to GATK best practices. 
+- location of script is `/home/cromwell-scripts/m2-rna`
+- run using `group-submit-m2-RNA.sh`
