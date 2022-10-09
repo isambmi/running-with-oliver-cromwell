@@ -1,6 +1,6 @@
 # Running the RNA-seq short variant discovery pipeline
 
-This pipeline is adapted from Adapted from [GATK's best practices for RNAseq short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192?id=3891), with the most notable change being the additional pre-processing before performing variant calling.
+This pipeline is adapted from [GATK's best practices for RNAseq short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192?id=3891), with the most notable change being the additional pre-processing before performing variant calling.
 
 ## Requirements
 
