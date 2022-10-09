@@ -52,7 +52,7 @@ Most important will be:
 
 1. [RNA-seq mutation calling pipeline](RNAseq-short-variant-discovery.md)
    - Adapted from [GATK's best practices for RNAseq short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192?id=3891)
-2. [DNA-seq mutation calling pipeline] (DNAseq-short-variant-discovery.md)
+2. [DNA-seq mutation calling pipeline](DNAseq-short-variant-discovery.md)
    - Implementation of GATK's best practices
 
 ## Utility wrapper scripts
