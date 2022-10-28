@@ -2,10 +2,6 @@
 
 This pipeline is adapted  from [GATK's best practices for Somatic short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-). The WDLs remain the same for the most part with some small changes made to account for the environment and local requirements.
 
-Current notebook benchmark:
-
-`/Users/isammohdibrahim/Documents/Dev/pieces-of-py/LC pre-processing/ddbj-wf-processing.ipynb`
-
 # Requirements
 
 1. Same as the general requirements
@@ -13,8 +9,7 @@ Current notebook benchmark:
 3. Suitable inputs for each step of the pipeline. 
     - As is the case of any pipeline, the most important part is getting the input right. Also as in any good pipeline, the output from each step should feed the subsequent step. The obvious departure from this is the first step, for which a python script (and notebook) have been provided to help with creating the expected input.
     - WDL expects json, not the actual files, and examples of these will be included/referenced.
-    - `/Users/isammohdibrahim/Documents/Dev/pieces-of-py/LC pre-processing/ddbj-wf-processing.ipynb`
-    - as an example of a notebook based on DDBJ data
+    - [link to input generating notebook here]
 
 # Tips
 
