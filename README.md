@@ -38,7 +38,7 @@ This walkthrough assumes that user and/or their environment has the following:
 2. [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
 3. Access to the lab server:
    - wrapper scripts are located at `/home/cromwell-scripts/` 
-   - server address is the default; `http://127.0.0.1:8089`
+   - cromwellserver address is `http://127.0.0.1:8089`
 
 ## Overview
 
