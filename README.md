@@ -48,7 +48,7 @@ Instead this guide will only go over:
 - Which script to use to execute a workflow (portion of a pipeline)
 - What input the script expects/accepts
 
-**WDL-Cromwell-Oliver diagram**
+![overview](pipeline_overview.png)
 
 ## Available pipelines
 
