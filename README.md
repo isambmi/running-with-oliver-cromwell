@@ -44,9 +44,11 @@ This walkthrough assumes that user and/or their environment has the following:
 
 An introduction to the basic idea and commands for using Oliver to handle and monitor workflow submissions is available on [Oliver's GitHub](https://stjudecloud.github.io/oliver/). This guide will not go into the specifics of how Oliver or Cromwell work, but instead focus on the execution of wrapper scripts that help submit multiple workflows to Cromwell via Oliver.
 
-Most important will be:
+Instead this guide will only go over:
 - Which script to use to execute a workflow (portion of a pipeline)
 - What input the script expects/accepts
+
+**WDL-Cromwell-Oliver diagram**
 
 ## Available pipelines
 
@@ -55,10 +57,11 @@ Most important will be:
 2. [DNA-seq mutation calling pipeline](DNAseq-short-variant-discovery.md)
    - Implementation of GATK's best practices
 
-## Utility wrapper scripts
+## Wrapper scripts
 
-The utility scripts can help
+The [wrapper scripts](helper_scripts/) used throughout this guide are essentially wrappers around Oliver commands intended to simplify manipulations of workflow at the group level, which includes:
 
-1. Aggregating the output of successful workflows by groupname
-2. Clearing the output of previous workflows by workflow name
+1. [Aggregating](helper_scripts/aggregating_outputs/) the output of successful workflows by groupname
+2. [Submitting](helper_scripts/group_submits/) groups of workflows
+3. [Other utility functions](helper_scripts/utility/) such as concatenating MAFs into one aggregated grouped MAF file and clearing the output of previous workflows by workflow name.
 

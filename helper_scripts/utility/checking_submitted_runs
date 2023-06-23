@@ -1,0 +1,1 @@
+oliver st -d -g p488-scma --grid-style pipe | tail -n+3 | cut -d"|" -f3 | sed 's/ *$//g' | xargs -I % find /home/isambmi/biocore_lts/isam/cromwell/cromwell-executions/seqConvMarkAdapt/%/call-PairedFastQsToUnmappedBAM/execution -type f -iname '*.bam'
