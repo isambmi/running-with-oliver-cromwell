@@ -1,0 +1,6 @@
+readgroup,sample_name,subject_id,sample_type,absolute_path_to_fq1,absolute_path_to_fq2,library_name,platform_unit,sequence_date,sequence_platform,sequence_center
+patient1,patient1,patient1,T,/full/path/to/fastq/patient1_1.fq.gz,/full/path/to/fastq/patient1_2.fq.gz,patient1,,1970-01-01,ILLUMINA,sequencing_center
+patient2,patient2,patient2,T,/full/path/to/fastq/patient2_1.fq.gz,/full/path/to/fastq/patient2_2.fq.gz,patient2,,1970-01-01,ILLUMINA,sequencing_center
+patient3,patient3,patient3,T,/full/path/to/fastq/patient3_1.fq.gz,/full/path/to/fastq/patient3_2.fq.gz,patient3,,1970-01-01,ILLUMINA,sequencing_center
+patient4,patient4,patient4,T,/full/path/to/fastq/patient4_1.fq.gz,/full/path/to/fastq/patient4_2.fq.gz,patient4,,1970-01-01,ILLUMINA,sequencing_center
+patient5,patient5,patient5,T,/full/path/to/fastq/patient5_1.fq.gz,/full/path/to/fastq/patient5_2.fq.gz,patient5,,1970-01-01,ILLUMINA,sequencing_center
