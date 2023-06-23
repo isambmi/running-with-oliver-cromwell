@@ -1,0 +1,14 @@
+{
+    "seqConvMarkAdapt.readgroup_name": "patient1",
+    "seqConvMarkAdapt.sample_name": "patient1",
+    "seqConvMarkAdapt.fastq_1": "/full/path/to/fastq/of/patient1_1.fq.gz",
+    "seqConvMarkAdapt.fastq_2": "/full/path/to/fastq/of/patient1_2.fq.gz",
+    "seqConvMarkAdapt.library_name": "patient1",
+    "seqConvMarkAdapt.platform_unit": NaN,
+    "seqConvMarkAdapt.run_date": "1970-01-01",
+    "seqConvMarkAdapt.platform_name": "ILLUMINA",
+    "seqConvMarkAdapt.sequencing_center": "sequencing_center",
+    "seqConvMarkAdapt.make_fofn": true,
+    "seqConvMarkAdapt.send_email": true,
+    "seqConvMarkAdapt.email": "user@email"
+}

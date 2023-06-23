@@ -1,0 +1,24 @@
+{
+    "Mutect2_Panel.gatk_docker": "arashi-gatk-42",
+    "Mutect2_Panel.pon_name": "groupname_pon",
+    "Mutect2_Panel.normal_bams": [
+        "full/path/to/bams/patient1_NA.b37.bam",
+        "full/path/to/bams/patient2_NA.b37.bam",
+        "full/path/to/bams/patient3_NA.b37.bam"
+    ],
+    "Mutect2_Panel.normal_bais": [
+        "full/path/to/bams/patient1_NA.b37.bai",
+        "full/path/to/bams/patient2_NA.b37.bai",
+        "full/path/to/bams/patient3_NA.b37.bai"
+    ],
+    "Mutect2_Panel.ref_fasta": "/path/to/reference/files/human_g1k_v37_decoy.fasta",
+    "Mutect2_Panel.ref_fai": "/path/to/reference/files/human_g1k_v37_decoy.fasta.fai",
+    "Mutect2_Panel.ref_dict": "/path/to/reference/files/human_g1k_v37_decoy.dict",
+    "Mutect2_Panel.scatter_count": 102,
+    "Mutect2_Panel.gnomad": "/path/to/reference/files/af-only-gnomad.raw.sites.vcf",
+    "Mutect2_Panel.gnomad_idx": "/path/to/reference/files/af-only-gnomad.raw.sites.vcf.idx",
+    "Mutect2_Panel.intervals": "/path/to/reference/files/calling-regions.v1.interval_list",
+    "Mutect2_Panel.send_email": true,
+    "Mutect2_Panel.email": "user@email",
+    "Mutect2_Panel.Mutect2.filter_mem": 70000
+}

@@ -54,14 +54,14 @@ Instead this guide will only go over:
 
 1. [RNA-seq mutation calling pipeline](RNAseq-short-variant-discovery.md)
    - Adapted from [GATK's best practices for RNAseq short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035531192?id=3891)
-2. [DNA-seq mutation calling pipeline](DNAseq-short-variant-discovery.md)
+2. [DNA-seq mutation calling pipeline](DNAseq-short-variant-discovery/README.md)
    - Implementation of GATK's best practices
 
 ## Wrapper scripts
 
-The [wrapper scripts](helper_scripts/) used throughout this guide are essentially wrappers around Oliver commands intended to simplify manipulations of workflow at the group level, which includes:
+The [wrapper scripts](DNAseq-short-variant-discovery/helper_scripts/) used throughout this guide are essentially wrappers around Oliver commands intended to simplify manipulations of workflow at the group level, which includes:
 
-1. [Aggregating](helper_scripts/aggregating_outputs/) the output of successful workflows by groupname
-2. [Submitting](helper_scripts/group_submits/) groups of workflows
-3. [Other utility functions](helper_scripts/utility/) such as concatenating MAFs into one aggregated grouped MAF file and clearing the output of previous workflows by workflow name.
+1. [Aggregating](DNAseq-short-variant-discovery/helper_scripts/aggregating_outputs/) (retrieving) the output of successful workflows by groupname
+2. [Submitting](DNAseq-short-variant-discovery/helper_scripts/group_submits/) groups of workflows
+3. [Other utility functions](DNAseq-short-variant-discovery/helper_scripts/utility/) such as concatenating MAFs into one aggregated grouped MAF file and clearing the output of previous workflows by workflow name.
 
