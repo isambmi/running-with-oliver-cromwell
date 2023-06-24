@@ -1,0 +1,14 @@
+{
+    "seqConvMarkAdapt.readgroup_name": "DCR002_TA",
+    "seqConvMarkAdapt.sample_name": "DCR002_TA",
+    "seqConvMarkAdapt.fastq_1": "/home/imibrahim/LTS/crc-temp/DCR002_TA/V350150402_L02_B5GHOMrkogRAAAA-501_1.fq.gz",
+    "seqConvMarkAdapt.fastq_2": "/home/imibrahim/LTS/crc-temp/DCR002_TA/V350150402_L02_B5GHOMrkogRAAAA-501_2.fq.gz",
+    "seqConvMarkAdapt.library_name": "DCR002_TA",
+    "seqConvMarkAdapt.platform_unit": "DCR002_TA",
+    "seqConvMarkAdapt.run_date": "2022-05-31T11:52:00",
+    "seqConvMarkAdapt.platform_name": "ILLUMINA",
+    "seqConvMarkAdapt.sequencing_center": "BGI",
+    "seqConvMarkAdapt.make_fofn": true,
+    "seqConvMarkAdapt.send_email": true,
+    "seqConvMarkAdapt.email": "isambmi@hawaii.edu"
+}
