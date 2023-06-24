@@ -22,7 +22,7 @@ This pipeline takes metadata of a group of samples and processes them together w
     - `absolute_path_to_fq2`: absolute path to fastq2 on ARASHI
     - `library_name`, can be same as sample name
     - `platform_unit` **(optional)**: platform unit
-    - `sequence_date`: sequence date
+    - `sequence_date`: sequence date (example format `2022-05-31T11:52:00`)
     - `sequence_platform`: sequence platform
     - `sequence_center`: sequence center
 
