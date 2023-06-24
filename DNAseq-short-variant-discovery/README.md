@@ -6,7 +6,7 @@ This pipeline takes metadata of a group of samples and processes them together w
 
 # Requirements
 
-1. Same as the [general requirements](README.md#requirements)
+1. Same as the [general requirements](/README.md#requirements)
     - as mentioned in the general requirements, the wrapper scripts (used for group submission and aggregation) can be found at `/home/cromwell-scripts`
     - the "working directories" mentioned in this guide refer to directories on the ARASHI server. The steps and commands of each section are expected to be run from their respective working directories.
 2. Raw DNA sequencing files. These can be either aligned BAM, unaligned BAM or fastq files. The “seq-conversion.wdl” used may differ depending on this input.
