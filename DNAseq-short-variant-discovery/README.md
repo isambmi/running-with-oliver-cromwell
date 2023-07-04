@@ -53,7 +53,7 @@ This pipeline takes metadata of a group of samples and processes them together w
 
 # Generating pipeline input
 
-Before running any of [the pipeline](#the-pipeline) scripts, first generate the required inputs for [SCMA](#a-sequence-format-conversion--marking-adapters-scma), [PoN](#c-generating-panel-of-normals-pon), and [M2](#d-variant-calling-with-mutect2-m2) using the [provided notebook](preparing_inputs/general_gatk_input_gen.ipynb).
+Before running any of [the pipeline](#the-pipeline) scripts, first generate the required inputs for [SCMA](#a-sequence-format-conversion--marking-adapters-scma), [PoN](#c-generating-panel-of-normals-pon), and [M2](#d-variant-calling-with-mutect2-m2) by running the [provided notebook](preparing_inputs/general_gatk_input_gen.ipynb) locally. The generated JSON files should then be transferred to the lab server to be used as input for the pipeline.
 
 **A note on "Capture Kit/Interval list", which are required to generate input for [PoN](#c-generating-panel-of-normals-pon) and [M2](#d-variant-calling-with-mutect2-m2)**
 
