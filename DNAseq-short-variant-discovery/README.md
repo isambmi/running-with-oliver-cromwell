@@ -6,7 +6,7 @@ This pipeline takes metadata of a group of samples and processes them together w
 
 # Requirements
 
-1. Same as the [general requirements](README.md#requirements)
+1. Same as the [general requirements](/README.md#requirements)
     - as mentioned in the general requirements, the wrapper scripts (used for group submission and aggregation) can be found at `/home/cromwell-scripts`
     - the "working directories" mentioned in this guide refer to directories on the ARASHI server. The steps and commands of each section are expected to be run from their respective working directories.
 2. Raw DNA sequencing files. These can be either aligned BAM, unaligned BAM or fastq files. The “seq-conversion.wdl” used may differ depending on this input.
@@ -22,7 +22,7 @@ This pipeline takes metadata of a group of samples and processes them together w
     - `absolute_path_to_fq2`: absolute path to fastq2 on ARASHI
     - `library_name`, can be same as sample name
     - `platform_unit` **(optional)**: platform unit
-    - `sequence_date`: sequence date (e.g. format `2022-05-31T11:52:00`)
+    - `sequence_date`: sequence date (example format `2022-05-31T11:52:00`)
     - `sequence_platform`: sequence platform
     - `sequence_center`: sequence center
 
@@ -53,7 +53,7 @@ This pipeline takes metadata of a group of samples and processes them together w
 
 # Generating pipeline input
 
-Before running any of [the pipeline](#the-pipeline) scripts, first generate the required inputs for [SCMA](#a-sequence-format-conversion--marking-adapters-scma), [PoN](#c-generating-panel-of-normals-pon), and [M2](#d-variant-calling-with-mutect2-m2) using the [provided notebook](preparing_inputs/general_gatk_input_gen.ipynb).
+Before running any of [the pipeline](#the-pipeline) scripts, first generate the required inputs for [SCMA](#a-sequence-format-conversion--marking-adapters-scma), [PoN](#c-generating-panel-of-normals-pon), and [M2](#d-variant-calling-with-mutect2-m2) by running the [provided notebook](preparing_inputs/general_gatk_input_gen.ipynb) locally. The generated JSON files should then be transferred to the lab server to be used as input for the pipeline.
 
 **A note on "Capture Kit/Interval list", which are required to generate input for [PoN](#c-generating-panel-of-normals-pon) and [M2](#d-variant-calling-with-mutect2-m2)**
 

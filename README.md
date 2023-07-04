@@ -34,7 +34,7 @@ This walkthrough is intended for use by the Deng Lab of Bioinformatics at the Un
 ## Requirements
 
 This walkthrough assumes that user and/or their environment has the following:
-1. Conda: A new environment is highly recommended
+1. Conda: A new environment (`python>=3`) is highly recommended
 2. [Oliver](https://stjudecloud.github.io/oliver/): Installing via `pip` is highly recommended, regardless of conda environment.
 3. Access to the lab server:
    - wrapper scripts are located at `/home/cromwell-scripts/` 
