@@ -3,6 +3,7 @@ import json
 import os
 from configparser import ConfigParser
 import sys
+import argparse
 
 def nl():
     print('\n')
@@ -287,7 +288,13 @@ def gen_m2(conf_keys, input_df, ref_refs):
     return
 
 def main():
-    conf_keys = load_config()
+    parser = argparse.ArgumentParser(description="Generates inputs for Deng Lab's implementation of GATK DNAseq best practices", formatter_class=argparse.ArgumentDefaultsHelpFormatter)
+    parser.add_argument("config_ini", help="Absolute path to config.ini")
+    args = parser.parse_args()
+    config = vars(args)
+    conf_ini = config['config_ini']
+
+    conf_keys = load_config(conf_ini)
     input_df = load_inputcsv(conf_keys['input_file'])
     print("=== INPUT GEN START ===")
     nl()
