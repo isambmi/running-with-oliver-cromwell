@@ -9,6 +9,6 @@
     "seqConvMarkAdapt.platform_name": "ILLUMINA",
     "seqConvMarkAdapt.sequencing_center": "BGI",
     "seqConvMarkAdapt.make_fofn": true,
-    "seqConvMarkAdapt.send_email": true,
+    "seqConvMarkAdapt.send_email": "True",
     "seqConvMarkAdapt.email": "isambmi@hawaii.edu"
 }

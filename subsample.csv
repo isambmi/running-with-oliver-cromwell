@@ -1,3 +1,3 @@
 ﻿readgroup,sample_name,subject_id,sample_type,absolute_path_to_fq1,absolute_path_to_fq2,library_name,platform_unit,sequence_date,sequence_platform,sequence_center
 DCR002_NA,DCR002_NA,DCR002,N,/home/imibrahim/LTS/crc-temp/DCR002_NA/V350150521_L01_B5GHOMrkogRAABA-509_1.fq.gz,/home/imibrahim/LTS/crc-temp/DCR002_NA/V350150521_L01_B5GHOMrkogRAABA-509_2.fq.gz,DCR002_NA,DCR002_NA,2022-05-31T11:52:00,ILLUMINA,BGI
-DCR002_TA,DCR002_TA,DCR002,N,/home/imibrahim/LTS/crc-temp/DCR002_TA/V350150402_L02_B5GHOMrkogRAAAA-501_1.fq.gz,/home/imibrahim/LTS/crc-temp/DCR002_TA/V350150402_L02_B5GHOMrkogRAAAA-501_2.fq.gz,DCR002_TA,DCR002_TA,2022-05-31T11:52:00,ILLUMINA,BGI
+DCR002_TA,DCR002_TA,DCR002,T,/home/imibrahim/LTS/crc-temp/DCR002_TA/V350150402_L02_B5GHOMrkogRAAAA-501_1.fq.gz,/home/imibrahim/LTS/crc-temp/DCR002_TA/V350150402_L02_B5GHOMrkogRAAAA-501_2.fq.gz,DCR002_TA,DCR002_TA,2022-05-31T11:52:00,ILLUMINA,BGI
