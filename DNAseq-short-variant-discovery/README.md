@@ -11,7 +11,7 @@ This pipeline takes metadata of a group of samples and processes them together w
     - the "working directories" mentioned in this guide refer to directories on the ARASHI server. The steps and commands of each section are expected to be run from their respective working directories.
 2. Raw DNA sequencing files. These can be either aligned BAM, unaligned BAM or fastq files. The “seq-conversion.wdl” used may differ depending on this input.
 3. Suitable inputs for each step of the pipeline. 
-    - As is the case of any pipeline, the most important part is getting the input right. Also as in any good pipeline, the output from each step should feed the subsequent step. The obvious departure from this is the first step, for which a python script (and notebook) have been provided to help with creating the expected input.
+    - As is the case of any pipeline, the most important part is getting the input right. Also as in any good pipeline, the output from each step should feed the subsequent step. The obvious departure from this is the first step, for which a [python script](preparing_inputs/gen_gatk_inputs.py) (and [notebook](preparing_inputs/general_gatk_input_gen.ipynb)) have been provided to help with creating the expected input.
     - WDL expects json, not the actual files, and examples of these will be included/referenced
 4. A CSV file ([example](example_inputs/example_meta.csv)) containing sample metadata. Unless stated otherwise, the expected CSV file should contain the following columns:
     - `readgroup`: Read group name ([notes on defining RG, library_name, and platform_unit](https://gatk.broadinstitute.org/hc/en-us/articles/360035890671-Read-groups)), but can simply use `sample_name`
@@ -54,6 +54,11 @@ This pipeline takes metadata of a group of samples and processes them together w
 # Generating pipeline input
 
 Before running any of [the pipeline](#the-pipeline) scripts, first generate the required inputs for [SCMA](#a-sequence-format-conversion--marking-adapters-scma), [PoN](#c-generating-panel-of-normals-pon), and [M2](#d-variant-calling-with-mutect2-m2) by running the [provided notebook](preparing_inputs/general_gatk_input_gen.ipynb) locally. The generated JSON files should then be transferred to the lab server to be used as input for the pipeline.
+
+Alternatively, you could run the [executable script](preparing_inputs/gen_gatk_inputs.py), which would read from user-defined [config.ini](preparing_inputs/config.ini)
+```bash
+python gen_gatk_inputs.py /absolute/path/to/config.ini
+```
 
 **A note on "Capture Kit/Interval list", which are required to generate input for [PoN](#c-generating-panel-of-normals-pon) and [M2](#d-variant-calling-with-mutect2-m2)**
 
