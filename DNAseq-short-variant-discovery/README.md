@@ -82,7 +82,7 @@ python gen_gatk_inputs.py /absolute/path/to/config.ini
 
 **Working directory**: `/home/cromwell-scripts/seqconv-markadapt`
 
-**WDL:** `seqConvMarkAdapt.wdl`
+**WDL:** [`seqConvMarkAdapt.wdl`](WDL/seqConvMarkAdapt.wdl)
 
 **Input(s)**: 
 
@@ -119,7 +119,7 @@ python gen_gatk_inputs.py /absolute/path/to/config.ini
 
 **Working directory**: `/home/cromwell-scripts/preprocessing`
 
-**WDL:** `processing-for-variant-discovery.wdl`
+**WDL:** [`processing-for-variant-discovery.wdl`](WDL/processing-for-variant-discovery.wdl)
 
 **Input(s):** 
 - `fofn.lists` from [SCMA](#a-sequence-format-conversion--marking-adapters-scma).
@@ -148,7 +148,7 @@ python gen_gatk_inputs.py /absolute/path/to/config.ini
 
 **Working directory**: `/home/cromwell-scripts/m2`
 
-**WDL:** `mutect_pon.wdl`
+**WDL:** [`mutect_pon.wdl`](WDL/mutect_pon.wdl)
 
 **Input(s)**: 
 
@@ -181,7 +181,7 @@ python gen_gatk_inputs.py /absolute/path/to/config.ini
 
 **Working directory**: `/home/cromwell-scripts/m2`
 
-**WDL:** `mutect2.wdl`
+**WDL:** [`mutect2.wdl`](WDL/mutect2.wdl)
 
 **Input(s)**: 
 
