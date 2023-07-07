@@ -2,7 +2,7 @@
 
 This pipeline is adapted  from [GATK's best practices for Somatic short variant discovery](https://gatk.broadinstitute.org/hc/en-us/articles/360035894731-Somatic-short-variant-discovery-SNVs-Indels-). The WDLs remain the same for the most part with some small changes made to account for the environment and local requirements. Most if not all of the steps use singularity containers, so there is no need to configure an environment for each tool/step.
 
-This pipeline takes metadata of a group of samples and processes them together with the final product being a single annotated MAF file comprising of all the SNVs from each sample.
+This pipeline takes metadata of a group of samples and processes them together with the final product being a single annotated MAF file comprising of all the SNVs from each sample. The pipeline utilizes singularity containers converted from [GATK's dockerhub](https://hub.docker.com/r/broadinstitute/gatk/tags), which are already available on Arashi.
 
 # Requirements
 
