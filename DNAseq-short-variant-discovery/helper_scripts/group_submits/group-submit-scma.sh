@@ -1,5 +1,5 @@
 #!/bin/bash
-wdl=/home/imibrahim/cromwell/seqconv-markadapt/seqConvMarkAdapt.wdl
+wdl=/home/cromwell-scripts/seqconv-markadapt/seqConvMarkAdapt.wdl
 
 while getopts i:g: flag
 do
