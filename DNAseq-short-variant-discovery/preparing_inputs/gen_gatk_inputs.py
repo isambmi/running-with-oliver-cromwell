@@ -259,7 +259,7 @@ def gen_m2(conf_keys, input_df, ref_refs):
             "Mutect2.split_intervals_extra_args": " --subdivision-mode BALANCING_WITHOUT_INTERVAL_SUBDIVISION --dont-mix-contigs --min-contig-size 1000000 ",
 
             "Mutect2.filter_funcotations": "True",
-            "Mutect2.funco_reference_version": ref_version, 
+            "Mutect2.funco_reference_version": "hg19" if ref_version == "b37" else ref_version, 
             # funcotator sources for all references are in here
             "Mutect2.funco_data_sources_tar_gz": funco_data_source,
 
