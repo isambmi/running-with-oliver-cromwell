@@ -33,6 +33,9 @@ workflow Bam2uMarkAdapt {
     String gatk_docker = "arashi-gatk-42"
     String gatk_path = "/gatk/gatk"
     String ubuntu_docker = "arashi-ubuntu"
+
+    Boolean send_email = false
+    String? email
   }
     Float input_size = size(input_bam, "GB")
     String run_name = basename(input_bam, ".bam")
@@ -74,6 +77,14 @@ workflow Bam2uMarkAdapt {
       ubam = MarkIlluminaAdapters.output_marked_bam,
       docker = ubuntu_docker,
       fofn_name = run_name
+  }
+
+    if (send_email) {
+    call B2maComplete {
+      input:
+        marked_bam = CreateFoFN.fofn_list,
+        email = email
+    }
   }
 
   output {
@@ -218,3 +229,17 @@ task CreateFoFN {
   }
 }
 
+task B2maComplete {
+  input {
+    String marked_bam
+    String? email
+  }
+  command {
+    echo "~{marked_bam} converted and marked" | mail -s "B2MA complete" ~{email}
+  }
+  runtime {
+  }
+  output {
+    File response = stdout()
+  }
+}
