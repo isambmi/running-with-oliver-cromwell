@@ -12,9 +12,10 @@ done
 
 
 # get all workflow-ids from group
-oliver st -g ${groupname} -d --grid-style pipe | grep ${groupname} | cut -d"|" -f3 | tr -d '[:blank:]' > tmp_succ_list_4rm
-
 workflow_name=`oliver st -g ${groupname} -d --grid-style pipe | grep ${groupname} | cut -d"|" -f4 | tr -d '[:blank:]' | head -n1`
+
+oliver st -g ${groupname} -d --grid-style pipe | grep ${groupname} | grep ${workflow_name} | cut -d"|" -f3 | tr -d '[:blank:]' > tmp_succ_list_4rm_${groupname}
+
 
 base_exec_dir="/home/cromwell-executions/${workflow_name}"
 
@@ -24,6 +25,6 @@ do
     # find and rm all non log files in wfid subdir
     find ${base_exec_dir}/${wfid} -type f -not \( -name stderr\* -o -name stdout\* -o -name script\* \) | xargs -I % -P 60 rm -rf -v %
 
-done < tmp_succ_list_4rm
+done < tmp_succ_list_4rm_${groupname}
 
-rm tmp_succ_list_4rm
+rm tmp_succ_list_4rm_${groupname}

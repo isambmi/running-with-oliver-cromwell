@@ -227,7 +227,7 @@ python gen_gatk_inputs.py /absolute/path/to/config.ini
 
 ---
 
-1. Using editors like `vi` or `less` check the number of meta lines preceding the header in the MAF files generated from [variant calling](#d-variant-calling-with-mutect2). Each MAF from the same project run should have the same number of meta lines. The number of meta lines in a typical Funcotated MAF is 159, (160 is where the header starts), however, results can vary depending on the source material.
+1. Using editors like `vi` or `less` check the number of meta lines preceding the header in the MAF files generated from [variant calling](#d-variant-calling-with-mutect2). Each MAF from the same project run should have the same number of meta lines. The number of meta lines in a typical Funcotated MAF is 159, (160 is where the header starts). So in this case, the flag would be `-n 160`. However, results can vary depending on the source material.
 2. Using the number of meta lines in step 1, run:
 
 ```bash
