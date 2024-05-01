@@ -17,7 +17,7 @@ mkdir -p ${output_dir}
 
 # Funcotated MAFs usually have 160 lines to skip
 # aggregates all mafs together into a temp file
-ls ${maf_dir}/*.maf | xargs -I % tail -n+${lines_to_skip} % >> ${output_dir}/${project_name}.aggregated.maf.tmp
+find ${maf_dir} -type f -name "*maf" | xargs -I % tail -n+${lines_to_skip} % >> ${output_dir}/${project_name}.aggregated.maf.tmp
 # removes all but the first header
 sed '1!{/^Hugo/d;};' ${output_dir}/${project_name}.aggregated.maf.tmp > ${output_dir}/${project_name}.aggregated.maf
 # remove temp file
