@@ -19,7 +19,7 @@ def load_config(conf_ini="config.ini"):
     conf_keys['input_file'] = conf['RUNTIME']['input_file']
     conf_keys['ref_version'] = conf['RUNTIME']['ref_version']
     conf_keys['raw_file_dir'] = conf['RUNTIME']['raw_file_dir'].rstrip('/').rstrip('\\')
-    conf_keys['send_email_for_all'] = conf['RUNTIME']['send_email_for_all']
+    conf_keys['send_email_for_all'] = conf.getboolean('RUNTIME', 'send_email_for_all')
 
     conf_keys['interval_file'] = conf['RUNTIME']['interval_file']
 
